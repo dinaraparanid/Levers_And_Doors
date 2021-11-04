@@ -17,7 +17,7 @@ int readingIntUntilOk(
           additionalChecks.indexWhere((func) => !func(input)) == -1) {
         return input;
       } else {
-        print('Incorrect input. Try again.');
+        print('Incorrect input. Try again.\n');
       }
     } else {
       print('Incorrect input. Try again.\n');

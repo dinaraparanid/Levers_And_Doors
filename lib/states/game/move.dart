@@ -20,7 +20,7 @@ class Move implements State {
     ) - 1;
 
     final int side = readingIntUntilOk(
-      'Enter the side to move lever:\n1) up\n2)down\n',
+      'Enter the side to move lever:\n1) up\n2) down\n',
       additionalChecks: List.filled(1, (x) => sideRange.contains(x))
     ) - 1;
 
