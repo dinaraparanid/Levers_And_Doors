@@ -1,0 +1,1 @@
+enum Side { up, down }
