@@ -26,7 +26,7 @@ class Game {
     gameStates.add(Move());
     gameStates.add(Finish());
 
-    final commandRange = Iterable.generate(2, (x) => x + 1);
+    final commandRange = List.generate(2, (x) => x + 1);
 
     while (true) {
       _printMenu();

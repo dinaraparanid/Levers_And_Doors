@@ -11,8 +11,8 @@ class Move implements State {
 
   @override
   void run() {
-    late final leversRange = Iterable.generate(Door.leversAmount, (x) => x + 1);
-    late final sideRange = Iterable.generate(2, (x) => x + 1);
+    late final leversRange = List.generate(Door.leversAmount, (x) => x + 1);
+    late final sideRange = List.generate(2, (x) => x + 1);
 
     final int ind = readingIntUntilOk(
         'Enter the number of level: ',
@@ -25,7 +25,6 @@ class Move implements State {
     ) - 1;
 
     _room.updateConfiguration(Command(ind, Side.values[side]));
-    _room.printConfiguration();
     _room.checkConfiguration();
   }
 }

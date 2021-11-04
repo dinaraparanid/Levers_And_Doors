@@ -26,7 +26,6 @@ class NewRoom implements State {
     Game.instance.goToNextLevel();
     Game.instance.room = Room();
     Game.instance.room.setConfiguration(n, m, leversPositions);
-    Game.instance.room.printConfiguration();
     Game.instance.room.checkConfiguration();
   }
 }

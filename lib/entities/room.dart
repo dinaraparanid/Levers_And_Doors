@@ -17,6 +17,8 @@ class Room {
     } else {
       openedDoors.forEach((element) => print('Door № ${element.number} is opened'));
     }
+
+    _printConfiguration();
   }
 
   void setConfiguration(
@@ -40,7 +42,7 @@ class Room {
     }
   }
 
-  void printConfiguration() {
+  void _printConfiguration() {
     print('Levers:');
     _levers.forEach((element) => print(element.toString()));
 
